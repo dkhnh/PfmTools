@@ -29,6 +29,7 @@ op    .
 </pre>
 ## cws
 Performance tool for C++
+#### Commands
 <pre>
 new   &lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]
       Create new .cpp files.
