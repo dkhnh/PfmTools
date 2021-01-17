@@ -3,13 +3,14 @@ Performance tools for my work.
 ## cw
 Performance tool for C
 #### Commands
-**new**&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create new .c files.<br/>
-**del**&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete .c files.<br/>
-op&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Op .c files with '%TEDT%'.<br/>
-run&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;[ARGUMENTS]<br/>
+<pre>
+new   &lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]
+      Create new .c files.
+del   &lt;FILE NAME&gt; .. [FILE NAME]
+      Delete .c files.<br/>
+op    &lt;FILE NAME&gt; .. [FILE NAME]
+      Op .c files with '%TEDT%'.
+run   &lt;FILE NAME&gt; [ARGUMENTS]
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compile and run a %EXT% file.<br/>
 ls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show .c file list.<br/>
 ws&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open dynamic workspace dicrectory with '%ODWS%'.<br/>
@@ -23,6 +24,7 @@ op&nbsp;&nbsp;&nbsp;.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new %EXT% file and opening it with '%TEDT%' if it doesn't not exists.<br/>
 &lt;FILE NAME&gt;&nbsp;[ARGUMENTS]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run and compile a %EXT% file if it exist.<br/>
+</pre>
 ## cws
 Performance tool for C++
 <pre>
