@@ -9,15 +9,15 @@ Performance tool for C
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete .c files.<br/>
 op&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Op .c files with '%TEDT%'.<br/>
-run   &lt;FILE NAME&gt;&nbsp;[ARGUMENTS]<br/>
+run&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;[ARGUMENTS]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compile and run a %EXT% file.<br/>
-ls    Show .c file list.<br/>
-ws    Open dynamic workspace dicrectory with '%ODWS%'.<br/>
-help  Show all helps.<br/>
+ls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show .c file list.<br/>
+ws&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open dynamic workspace dicrectory with '%ODWS%'.<br/>
+help&nbsp;&nbsp;Show all helps.<br/>
 #### Shortcut commands:<br/>
-del   .<br/>
+del&nbsp;&nbsp;&nbsp;.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete all %EXT% files in dynamic workspace dicrectory.<br/>
-op    .<br/>
+op&nbsp;&nbsp;&nbsp;.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open all %EXT% files in dynamic workspace dicrectory.<br/>
 &lt;FILE NAME&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new %EXT% file and opening it with '%TEDT%' if it doesn't not exists.<br/>
