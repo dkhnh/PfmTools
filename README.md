@@ -3,10 +3,10 @@ Performance tools for my work.
 ## cw
 Performance tool for 
 ### Commands
-**new**   <FILE NAME> .. [FILE NAME]\
-          Create new .c files.\
-**del**   <FILE NAME> .. [FILE NAME]\
-      Delete .c files.\
+**new**&nbsp;&nbsp;&nbsp;<FILE NAME> .. [FILE NAME]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create new .c files.<br/>
+**del**&nbsp;&nbsp;&nbsp;<FILE NAME> .. [FILE NAME]<br/>
+&nbsp;&nbsp;&nbsp;Delete .c files.<br/>
 op    <FILE NAME> .. [FILE NAME]
 	    Op .c files with '%TEDT%'.
 run   <FILE NAME> [ARGUMENTS]
