@@ -1,11 +1,11 @@
 # PfmTools
 Performance tools for my work.
 ## cw
-###### Commands
-Performance tool for C
-new   <FILE NAME> .. [FILE NAME]
+Performance tool for 
+###### CommandsC
+- **new**   <FILE NAME> .. [FILE NAME]
       Create new .c files.
-del   <FILE NAME> .. [FILE NAME]
+- **del**   <FILE NAME> .. [FILE NAME]
       Delete .c files.
 op    <FILE NAME> .. [FILE NAME]
 	    Op .c files with '%TEDT%'.
