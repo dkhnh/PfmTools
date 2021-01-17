@@ -7,31 +7,49 @@ Performance tool for C
 new   &lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]
       Create new .c files.
 del   &lt;FILE NAME&gt; .. [FILE NAME]
-      Delete .c files.<br/>
+      Delete .c files.
 op    &lt;FILE NAME&gt; .. [FILE NAME]
-      Op .c files with '%TEDT%'.
+      Op .c files with code editor.
 run   &lt;FILE NAME&gt; [ARGUMENTS]
-      Compile and run a %EXT% file.
+      Compile and run a .c file.
 ls    Show .c file list.
-ws    Open dynamic workspace dicrectory with '%ODWS%'.
+ws    Open dynamic workspace dicrectory with file manager.
 help  Show all helps.
 </pre>
 #### Shortcut commands
 <pre>
 del   .
-      Delete all %EXT% files in dynamic workspace dicrectory.
+      Delete all .c files in dynamic workspace dicrectory.
 op    .
-      Open all %EXT% files in dynamic workspace dicrectory.
+      Open all .c files in dynamic workspace dicrectory.
 &lt;FILE NAME&gt;
-      Create a new %EXT% file and opening it with '%TEDT%' if it doesn't not exists.<br/>
+      Create a new .c file and opening it with code editor if it doesn't not exists.
 &lt;FILE NAME&gt; [ARGUMENTS]
-      Run and compile a %EXT% file if it exist.<br/>
+      Run and compile a .c file if it exist.
 </pre>
 ## cws
 Performance tool for C++
 <pre>
-new   &lt;FILE NAME&gt; .. [FILE NAME]
+new   &lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]
       Create new .cpp files.
 del   &lt;FILE NAME&gt; .. [FILE NAME]
       Delete .cpp files.
+op    &lt;FILE NAME&gt; .. [FILE NAME]
+      Op .cpp files with code editor.
+run   &lt;FILE NAME&gt; [ARGUMENTS]
+      Compile and run a .cpp file.
+ls    Show .cpp file list.
+ws    Open dynamic workspace dicrectory with file manager.
+help  Show all helps.
+</pre>
+#### Shortcut commands
+<pre>
+del   .
+      Delete all .cpp files in dynamic workspace dicrectory.
+op    .
+      Open all .cpp files in dynamic workspace dicrectory.
+&lt;FILE NAME&gt;
+      Create a new .cpp file and opening it with code editor if it doesn't not exists.
+&lt;FILE NAME&gt; [ARGUMENTS]
+      Run and compile a .cpp file if it exist.
 </pre>
