@@ -2,11 +2,11 @@
 Performance tools for my work.
 ## cw
 Performance tool for 
-### CommandsC
-- **new**   <FILE NAME> .. [FILE NAME]
-      Create new .c files.
-- **del**   <FILE NAME> .. [FILE NAME]
-      Delete .c files.
+### Commands
+**new**   <FILE NAME> .. [FILE NAME]\
+      Create new .c files.\
+**del**   <FILE NAME> .. [FILE NAME]\
+      Delete .c files.\
 op    <FILE NAME> .. [FILE NAME]
 	    Op .c files with '%TEDT%'.
 run   <FILE NAME> [ARGUMENTS]
