@@ -1,13 +1,13 @@
 # PfmTools
 Performance tools for my work.
 ## cw
-Performance tool for 
+Performance tool for C
 #### Commands
 **new**&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create new .c files.<br/>
-**del**&nbsp;&nbsp;&nbsp;<FILE NAME> .. [FILE NAME]<br/>
+**del**&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete .c files.<br/>
-op    &lt;FILE NAME&gt;&nbsp;.. [FILE NAME]<br/>
+op&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Op .c files with '%TEDT%'.<br/>
 run   &lt;FILE NAME&gt;&nbsp;[ARGUMENTS]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compile and run a %EXT% file.<br/>
