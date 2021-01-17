@@ -26,7 +26,8 @@ op&nbsp;&nbsp;&nbsp;.<br/>
 ## cws
 Performance tool for C++
 <pre>
-hello, this is
-   just an     example
-....
+new   <FILE NAME> .. [FILE NAME]
+      Create new .cpp files.
+del   <FILE NAME> .. [FILE NAME]
+      Delete .cpp files.
 </pre>
