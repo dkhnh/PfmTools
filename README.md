@@ -3,7 +3,7 @@ Performance tools for my work.
 ## cw
 Performance tool for 
 ### Commands
-**new**&nbsp;&nbsp;&nbsp;<FILE NAME> .. [FILE NAME]<br/>
+**new**&nbsp;&nbsp;&nbsp;&lt;FILE NAME&gt;&nbsp;..&nbsp;[FILE NAME]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create new .c files.<br/>
 **del**&nbsp;&nbsp;&nbsp;<FILE NAME> .. [FILE NAME]<br/>
 &nbsp;&nbsp;&nbsp;Delete .c files.<br/>
