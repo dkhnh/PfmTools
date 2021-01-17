@@ -1,6 +1,6 @@
 # PfmTools
 Performance tools for my work.
-# cw
+## cw
 ###### Commands
 Performance tool for C
 new   <FILE NAME> .. [FILE NAME]
@@ -23,5 +23,5 @@ op    .
       Create a new %EXT% file and opening it with '%TEDT%' if it doesn't not exists.
 <FILE NAME> [ARGUMENTS]
       Run and compile a %EXT% file if it exist.
-# cws
+## cws
 Performance tool for C++
