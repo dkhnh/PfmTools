@@ -1,0 +1,87 @@
+#!/bin/bash
+
+# The directory containing this file
+EXDIR="$(dirname $(readlink -f $0))"
+
+# WS tree
+WS_HOME=~/.ws
+WS_ART=Art
+WS_PROJECTS=Projects
+WS_CENTER=Center
+WS_FACTORY=Factory
+WS_LAB=Lab
+WS_LIBRARY=Library
+WS_TEMP=Temp
+WS_CTR=ws.sh
+
+# Create HOME dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME" ]; then
+	mkdir $WS_HOME
+fi
+
+# Create ART dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME/$WS_ART" ]; then
+	mkdir $WS_HOME/$WS_ART
+fi
+
+# Create PROJECTS dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME/$WS_PROJECTS" ]; then
+	mkdir $WS_HOME/$WS_PROJECTS
+fi
+
+# Create CENTER dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME/$WS_CENTER" ]; then
+	mkdir $WS_HOME/$WS_CENTER
+fi
+
+# Create FACTORY dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME/$WS_FACTORY" ]; then
+	mkdir $WS_HOME/$WS_FACTORY
+fi
+
+# Create LAB dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME/$WS_LAB" ]; then
+	mkdir $WS_HOME/$WS_LAB
+fi
+
+# Create LIBRARY dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME/$WS_LIBRARY" ]; then
+	mkdir $WS_HOME/$WS_LIBRARY
+fi
+
+# Create TEMP dicrectory if it doesn't exists.
+if ! [ -d "$WS_HOME/$WS_TEMP" ]; then
+	mkdir $WS_HOME/$WS_TEMP
+fi
+
+# Copy ws.sh to CENTER
+if [ -f "$EXDIR/$WS_CTR" ]; then
+	cp $EXDIR/$WS_CTR $WS_HOME/$WS_CENTER/$WS_CTR
+else
+	echo "$WS_CTR not found."
+	rm -rf $WS_HOME
+	exit 0
+fi
+
+# Import to ws.sh to rc file
+if [ -f ~/.zshrc ]; then
+	echo "" >> ~/.zshrc
+	echo "# ws" >> ~/.zshrc
+	echo "WS_HOME=$WS_HOME" >> ~/.zshrc
+	echo "source $WS_HOME/$WS_CENTER/$WS_CTR" >> ~/.zshrc
+	echo "Complete!"
+	exit 1
+fi
+
+if [ -f ~/.bashrc ]; then
+	echo "" >> ~/.basrc
+	echo "# ws" >> ~/.basrc
+	echo "WS_HOME=$WS_HOME" >> ~/.basrc
+	echo "source $WS_HOME/$WS_CENTER/$WS_CTR" >> ~/.basrc
+	echo "Complete!"
+	exit 1
+fi
+
+echo ".zshrc and .bashrc not found!"
+rm -rf $WS_HOME
+exit 0
