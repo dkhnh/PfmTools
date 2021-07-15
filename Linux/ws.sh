@@ -65,3 +65,25 @@ function evil() {
 	echo "Done!"
 	echo -e "\033[32mDon't forget to create new brach.\e[0m"
 }
+
+function demon() {
+	if [ "$1" = "" ]; then
+		echo "demon <URL>"
+		return
+	fi
+
+	PROJECT_NAME=$1
+	PROJECT_NAME="${PROJECT_NAME##*/}"
+	PROJECT_NAME="${PROJECT_NAME%.git}"
+
+	cd $WS_HOME/Projects
+	if [ -d $PROGJECT_NAME ]; then
+		echo "-> rm -rf $PROJECT_NAME"
+		rm -rf $PROJECT_NAME
+	fi
+
+	echo "-> git clone $1"
+	git clone $1
+	echo "Done!"
+	echo -e "\033[32mDon't forget to create new brach.\e[0m"
+}
