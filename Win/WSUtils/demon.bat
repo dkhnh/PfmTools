@@ -8,7 +8,7 @@ IF "%1" == "" (
 SET PROJECT_NAME=%~n1
 
 ECHO run CD %WS_HOME%\Projects
-cd %WS_HOME%\Projects
+CD %WS_HOME%\Projects
 
 if EXIST %WS_HOME%\Projects\%PROJECT_NAME% (
   ECHO run RMDIR /Q /S %WS_HOME%\Projects\%PROJECT_NAME%
@@ -17,6 +17,8 @@ if EXIST %WS_HOME%\Projects\%PROJECT_NAME% (
 
 ECHO run git clone %1
 git clone %1
+ECHO run CD %PROJECT_NAME%
+CD %PROJECT_NAME%
 ECHO Done!
 ECHO Don't forget to create new brach.
 
