@@ -7,6 +7,7 @@ IF "%1" == "" (
 
 SET PROJECT_NAME=%~n1
 
+ECHO run CD %WS_HOME%\Projects
 cd %WS_HOME%\Projects
 
 if EXIST %WS_HOME%\Projects\%PROJECT_NAME% (
