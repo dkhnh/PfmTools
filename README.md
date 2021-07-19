@@ -25,6 +25,6 @@ ws2   [PROJECT NAME]
       Go to Projects folder or the project folder.
 evil  <BRANCH> <URL>
       Pull a project from the Git server and place it in Projects folder.
-demon <BRANCH> <URL>
+demon <URL>
       Clone a project from the Git server and place it in Projects folder.
 ```
