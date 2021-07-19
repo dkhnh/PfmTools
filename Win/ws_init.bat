@@ -2,7 +2,7 @@
 REM The directory containing this file.
 SET EXDIR=%~dp0
 
-# WS tree
+REM WS tree
 SET WS_HOME=D:\Workspace
 SET WS_ART=Art
 SET WS_PROJECTS=Projects
@@ -20,59 +20,61 @@ IF NOT EXIST %WS_HOME%\NUL (
 )
 
 REM Create ART dicrectory if it doesn't exists.
-IF NOT EXIST %WS_HOME%\%ART%\NUL (
-  ECHO run MKDIR %WS_HOME%\%ART%
-	MKDIR %WS_HOME%\%ART%
+IF NOT EXIST %WS_HOME%\%WS_ART%\NUL (
+  ECHO run MKDIR %WS_HOME%\%WS_ART%
+	MKDIR %WS_HOME%\%WS_ART%
 )
 
 REM Create PROJECTS dicrectory if it doesn't exists.
-IF NOT EXIST %WS_HOME%\%PROJECTS%\NUL (
-  ECHO run MKDIR %WS_HOME%\%PROJECTS%
-	MKDIR %WS_HOME%\%PROJECTS%
+IF NOT EXIST %WS_HOME%\%WS_PROJECTS%\NUL (
+  ECHO run MKDIR %WS_HOME%\%WS_PROJECTS%
+	MKDIR %WS_HOME%\%WS_PROJECTS%
 )
 
 REM Create CENTER dicrectory if it doesn't exists.
-IF NOT EXIST %WS_HOME%\%CENTER%\NUL (
-  ECHO run MKDIR %WS_HOME%\%CENTER%
-	MKDIR %WS_HOME%\%CENTER%
+IF NOT EXIST %WS_HOME%\%WS_CENTER%\NUL (
+  ECHO run MKDIR %WS_HOME%\%WS_CENTER%
+	MKDIR %WS_HOME%\%WS_CENTER%
 )
 
 REM Create FACTORY dicrectory if it doesn't exists.
-IF NOT EXIST %WS_HOME%\%FACTORY%\NUL (
-  ECHO run MKDIR %WS_HOME%\%FACTORY%
-	MKDIR %WS_HOME%\%FACTORY%
+IF NOT EXIST %WS_HOME%\%WS_FACTORY%\NUL (
+  ECHO run MKDIR %WS_HOME%\%WS_FACTORY%
+	MKDIR %WS_HOME%\%WS_FACTORY%
 )
 
 REM Create LAB dicrectory if it doesn't exists.
-IF NOT EXIST %WS_HOME%\%LAB%\NUL (
-  ECHO run MKDIR %WS_HOME%\%LAB%
-	MKDIR %WS_HOME%\%LAB%
+IF NOT EXIST %WS_HOME%\%WS_LAB%\NUL (
+  ECHO run MKDIR %WS_HOME%\%WS_LAB%
+	MKDIR %WS_HOME%\%WS_LAB%
 )
 
 REM Create LIBRARY dicrectory if it doesn't exists.
-IF NOT EXIST %WS_HOME%\%LIBRARY%\NUL (
-  ECHO run MKDIR %WS_HOME%\%LIBRARY%
-	MKDIR %WS_HOME%\%LIBRARY%
+IF NOT EXIST %WS_HOME%\%WS_LIBRARY%\NUL (
+  ECHO run MKDIR %WS_HOME%\%WS_LIBRARY%
+	MKDIR %WS_HOME%\%WS_LIBRARY%
 )
 
 REM Create TEMP dicrectory if it doesn't exists.
-IF NOT EXIST %WS_HOME%\%TEMP%\NUL (
-  ECHO run MKDIR %WS_HOME%\%TEMP%
-	MKDIR %WS_HOME%\%TEMP%
+IF NOT EXIST %WS_HOME%\%WS_TEMP%\NUL (
+  ECHO run MKDIR %WS_HOME%\%WS_TEMP%
+	MKDIR %WS_HOME%\%WS_TEMP%
 )
 
 REM Create TEMP dicrectory if it doesn't exists.
 IF NOT EXIST %EXDIR%\%WS_UTILS%\NUL (
   ECHO %WS_UTILS% not found
+  ECHO run RMDIR /Q /S %WS_HOME%
+  RMDIR /Q /S %WS_HOME%
   GOTO ENDEX
 )
 
 REM Copy WS_UTILS to WS_CENTER
-ECHO run Xcopy /E /I %EXDIR%\%WS_UTILS% %WS_HOME%\%WS_CENTER%\%WS_UTILS
-Xcopy /E /I %EXDIR%\%WS_UTILS% %WS_HOME%\%WS_CENTER%\%WS_UTILS
+ECHO run Xcopy /E /I /Y %EXDIR%\%WS_UTILS% %WS_HOME%\%WS_CENTER%\%WS_UTILS%
+Xcopy /E /I /Y %EXDIR%\%WS_UTILS% %WS_HOME%\%WS_CENTER%\%WS_UTILS%
 
 ECHO Please^! Add WS_HOME=%WS_HOME% to the environment,
-ECHO and add ^%WS_HOME^%\%WS_CENTER%;^%WS_HOME^%\%WS_CENTER%\%WS_UTILS to path
+ECHO and add %WS_HOME%\%WS_CENTER%;%WS_HOME%\%WS_CENTER%\%WS_UTILS% to path
 
 :ENDEX
 EXIT /B 0
